@@ -48,5 +48,130 @@
       >
       <!-- Lồng thẻ -->
     </p>
+
+    <!-- Thẻ tạo liên kểt - link -->
+    <a
+      href="https://github.com/"
+      title="my github"
+      target="_blank"
+      rel="noreferrer noopener"
+      >github</a
+    >
+
+    <!-- href -> Thẻ chứa link (bắt buộc) 
+         title -> Thẻ chứa title (khi di chuột vào link sẽ hiện ra)
+         target -> xác định nơi mở tài nguyên được liên kết 
+              * Lưu ý: khi dùng target="_blank" phải thêm thẻ
+                  - rel="noreferrer noopener"
+                    <rel> là mối quan hệ giữa trang hiện tại và tài nguyên liên kết
+                    <noreferrer noopener> ngăn lỗ hổng bảo mật và bảo mật riêng tư cho trang hiện tại
+    -->
+
+    <br />
+
+    <!-- Link tải cái gì đó khi ấn vào -->
+    <a href="./assets/babythree1.jpg" download="babytree.jpg"
+      >download babytree1</a
+    >
+    <!-- Nếu chỉ có href thì nó chỉ hiện thị ảnh khi ấn
+        + cần có thuộc tính
+            -> download="" <giá trị của nó là tên khi mình tải về>
+    -->
+
+    <br />
+
+    <!-- Chèn hình ảnh <img> -->
+    <img
+      src="./assets/babythree1.jpg"
+      alt="babythree1"
+      height="300px"
+      width="300px"
+    />
+    <!-- src="link img" alt="mô tả nếu ảnh ko load được" -->
+
+    <!-- LƯU Ý: FILE IMG <JPG V.V> RẤT NẶNG NÊN CHUYỂN SANG <WEBP> -->
+
+    <!-- THẺ VIDEO -->
+
+    <!-- Cách 1: thường dùng cho web cá nhân ít cần sự chuyên nghiệp -->
+    <video
+      src="./assets/video.webm"
+      type="video/webm"
+      controls
+      autoplay
+      loop
+      muted
+      height="300px"
+    ></video>
+
+    <!-- Cách 2: trông chuyên nghiên hơn -->
+    <video poster="./assets/video_cover.png" controls height="300px">
+      <source src="./assets/video.webm" type="video/webm" />
+      <source src="./assets/video.mp4" typer="video/mp4" />
+
+      <!-- cung cấp nhiều dự phòng để tránh trình duyệt ko hỗ trợ định dạng -->
+    </video>
+
+    <!-- THẺ AUDIO -->
+    <audio controls>
+      <source src="./assets/audio.mp3" type="audio/mp3" />
+      <source src="./assets/audio.ogg" type="audio/ogg" />
+    </audio>
+
+    <!-- DANH SÁCH <LIST> -->
+    <br />
+
+    <!-- 
+        Danh sách có thứ tự
+        Type có thể mang giá trị: 1, a, A, I, i
+    -->
+    <h1>Kế hoạch cho Ngày Valentine</h1>
+    <ol type="I">
+      <li>Mua quà tặng</li>
+      <li>Hẹn hò lãng mạn</li>
+      <li>
+        Hoạt động sáng tạo
+        <ol type="a">
+          <li>Cùng làm bánh ngọt tại nhà</li>
+          <li>Viết thư tay để thể hiện tình cảm</li>
+          <li>Chụp ảnh kỷ niệm tại studio</li>
+        </ol>
+      </li>
+    </ol>
+
+    <!-- 
+        Danh sách không có thứ tự
+        Type có thể mang giá trị: circle, dist, square
+    -->
+    <h1>Kế hoạch cho Ngày Valentine</h1>
+    <ul type="none">
+      <li>Mua quà tặng</li>
+      <li>Hẹn hò lãng mạn</li>
+      <li>
+        Hoạt động sáng tạo
+        <ul type="circle">
+          <li>Cùng làm bánh ngọt tại nhà</li>
+          <li>Viết thư tay để thể hiện tình cảm</li>
+          <li>Chụp ảnh kỷ niệm tại studio</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- 
+        Danh sách mô tả
+    -->
+    <h1>Kế hoạch cho Ngày Valentine</h1>
+    <dl>
+      <dt>Mua quà tặng</dt>
+      <dd>Gấu bông</dd>
+      <dd>Hoa</dd>
+      <dt>Hẹn hò lãng mạn</dt>
+      <dd>Xem phim</dd>
+      <dd>Ăn uống</dd>
+      <dt>Hoạt động sáng tạo</dt>
+      <dd>Cùng làm bánh ngọt tại nhà</dd>
+      <dd>Viết thư tay để thể hiện tình cảm</dd>
+      <dd>Chụp ảnh kỷ niệm tại studio</dd>
+    </dl>
   </body>
 </html>
